@@ -10,5 +10,5 @@ import javax.persistence.Id;
 public class Contact {
     @Id @GeneratedValue
     Long id;
-    String firstName, lastName, phone, address, country, city, district, email;
+    String firstName, lastName, phone, address, country, city, district, email, website;
 }
