@@ -11,4 +11,5 @@ public class Contact {
     @Id @GeneratedValue
     Long id;
     String firstName, lastName, phone, address, country, city, district, email, website;
+    String linkedIn;
 }
