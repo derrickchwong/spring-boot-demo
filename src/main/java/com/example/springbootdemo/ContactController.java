@@ -1,10 +1,7 @@
 package com.example.springbootdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,6 +12,11 @@ public class ContactController {
     @GetMapping("/contacts")
     public List<Contact> getAllContacts(){
         return contactRepository.findAll();
+    }
+
+    @GetMapping("/contacts/{id}")
+    public Contact getContactById(@PathVariable Long id){
+        return contactRepository.getOne(id);
     }
 
     @PostMapping("/contact")
