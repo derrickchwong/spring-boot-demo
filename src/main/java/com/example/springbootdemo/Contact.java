@@ -15,4 +15,5 @@ public class Contact {
     String facebook;
     String ig;
     String twitter;
+    String wechat;
 }
