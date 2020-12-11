@@ -14,4 +14,5 @@ public class Contact {
     String linkedIn;
     String facebook;
     String ig;
+    String twitter;
 }
