@@ -13,4 +13,5 @@ public class Contact {
     String firstName, lastName, phone, address, country, city, district, email, website;
     String linkedIn;
     String facebook;
+    String ig;
 }
