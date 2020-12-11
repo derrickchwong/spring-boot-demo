@@ -12,4 +12,5 @@ public class Contact {
     Long id;
     String firstName, lastName, phone, address, country, city, district, email, website;
     String linkedIn;
+    String facebook;
 }
